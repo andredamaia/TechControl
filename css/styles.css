@@ -1,0 +1,13 @@
+@import './components/header.css';
+@import './components/footer.css';
+
+@import './utils/base.css';
+@import './utils/text.css';
+@import './utils/button.css';
+@import './utils/preload.css';
+@import './utils/animate.css';
+@import './utils/form.css';
+
+@import './pages/index.css';
+@import './pages/contato.css';
+@import './pages/orcamento.css';

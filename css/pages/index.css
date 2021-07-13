@@ -1,0 +1,240 @@
+.banner-principal {
+    background: url('/images/bg-banner-3.jpg') center no-repeat;
+    padding: 14rem 0;
+    overflow: hidden;
+}
+
+.left-side {
+    padding-top: 13rem;
+}
+
+.left-side span{
+    font-size: 5.5rem;
+    line-height: 6.6rem;
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+    display: block;
+}
+
+.left-side p {
+    font-size: 2.4rem;
+    line-height: 4rem;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 4.5rem 0;
+}
+
+
+/* .left-side span:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+} */
+
+.right-side figure {
+    height: 68rem;
+    width: 95rem;
+}
+
+.right-side figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.area-white { 
+    padding: 10rem 0;
+    background: #fefefe;
+}
+
+.servicos-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2.7rem;
+}
+
+.servicos-title span {
+    margin-left: 1rem;
+    font-size: 2.4rem;
+    line-height: 7.5rem;
+    font-weight: 700;
+    color: #00023f;
+}
+
+.area-gray {
+    background: rgb(235,237,238);
+    background: linear-gradient(180deg, rgba(235,237,238,1) 33%, rgba(222,224,226,1) 66%, rgba(234,236,237,1) 100%);
+    padding: 10rem 0;
+}
+
+.box-white {
+    height: 19rem;
+    width: 36rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 1rem;
+}
+
+.right-text { margin-top: 6rem;}
+
+.right-text p {
+    margin-bottom: 3rem;
+}
+
+.galeria { padding-top: 10rem;}
+
+.box-img {
+    width: 100%;
+    height: 34rem;
+    overflow: hidden;
+}
+
+.box-img figure {
+    height: 100%;
+}
+
+.box-img img { 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-dispositivos {
+    width: 100%;
+    padding: 2rem;
+    background: #ffffff;
+    border: 1px solid transparent;
+    box-shadow: 10px 10px 40px rgba(241, 242, 243, .9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dispositivos-img { 
+    background: #ebedee;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 30.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.dispositivos figure img { 
+    max-width: 90%;
+}
+
+.dispositivos { text-align: center;}
+
+.dispositivos strong {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    display: block;
+}
+
+.box-depoimentos {
+    width: 50rem;
+    height: 46rem;
+    background: #ffffff;
+    padding: 8rem 6rem;
+    border-radius: 1rem;
+}
+
+.person { 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.person figure {
+    width: 5rem;
+    height: 5rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.person figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.person-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.person-name strong {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #737373;
+    font-weight: 700;
+}
+
+.person-name span {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #737373;
+    font-weight: 400;
+}
+
+.duvidas { 
+    background: url('/images/duvidas.jpg') center no-repeat;
+    background-size: cover;
+    padding: 10rem 0;
+}
+
+.duvidas h2, .duvidas .subtitle, .duvidas .rodape-title { color: #fff;}
+
+.area-cliente {
+    padding: 3.5rem 0;
+    background: #ebedee;
+}
+
+.area-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.area-title img {
+    width: 100%;
+    margin-top: -7px;
+}
+
+.area-cliente span {
+    font-size: 2.8rem;
+    line-height: 5.7rem;
+    color: #00023f;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0 0 0 1rem;
+}
+
+
+
+
+
+
+

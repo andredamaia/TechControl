@@ -1,0 +1,53 @@
+.form-cliente {
+    height: 100%;
+}
+
+.form-cliente input {
+    height: 5rem;
+    line-height: 5rem;
+    padding: 0 2rem;
+    background: #ffffff;
+    color: #00023f;
+    border: 1px solid transparent;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.form-cliente input::placeholder { 
+    color: #00023f;
+    font-weight: 700;
+}
+
+.form-highlight input{
+    width: 100%;
+    border: 1px solid #b8b8b8;
+    height: 6rem;
+    line-height: 6rem;
+    font-size: 1.6rem;
+    color: #606060;
+    padding: 0 3rem;
+    font-weight: 600;
+    margin-bottom: 3.5rem;
+}
+
+.form-highlight textarea{
+    width: 100%;
+    border: 1px solid #b8b8b8;
+    font-size: 1.6rem;
+    color: #606060;
+    padding: 3rem;
+    font-weight: 600;
+    margin-bottom: 3.5rem;
+}
+
+.form-highlight .button-light-blue {
+    width: 100%;
+    text-align: center;
+}
+
+.form-highlight .button-light-blue img {
+    position: absolute;
+    top: 23px;
+    right: 60px;
+}

@@ -1,0 +1,106 @@
+a.button-primary {display: inline-block;}
+a.button-light-blue {display: inline-block;}
+button { border: none;}
+
+.button-primary {
+    height: 6rem;
+    line-height: 6rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    background: #00023f;
+    padding: 0 7.5rem 0 3.5rem;
+    text-decoration: none;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+
+.button-primary img {
+    position: absolute;
+    top: 22px;
+    right: 25px;
+}
+
+.button-primary:hover {
+    background: #fff;
+    color: #00023f;
+}
+
+.button-primary:hover .white-arrow {
+    display: none;
+}
+
+.button-primary:hover .blue-arrow {
+    display: block;
+}
+
+.blue-arrow {
+    display: none;
+}
+
+
+.button-secundary {
+    padding: 2rem 4rem;
+    background: #ffffff;
+    color: #0038b9 !important;
+    font-weight: 700 !important;
+    transition: all .3s ease-in-out;
+}
+
+.button-secundary:hover {
+    background: #00023f;
+    color: #ffffff !important;
+}
+
+.button-light-blue {
+    height: 6rem;
+    line-height: 6rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    background: #0038b8;
+    padding: 0 7.5rem 0 3.5rem;
+    text-decoration: none;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+
+.button-light-blue img {
+    position: absolute;
+    top: 22px;
+    right: 25px;
+}
+
+.button-light-blue:hover {
+    background: #fff;
+    color: #0038b8;
+    border: 1px solid #0038b8;
+}
+
+.button-light-blue:hover .white-arrow {
+    display: none;
+}
+
+.button-light-blue:hover .blue-arrow {
+    display: block;
+}
+
+.button-form {
+    height: 5rem;
+    line-height: 5rem;
+    padding: 0 2rem;
+    background: #0038b8;
+    color: #ffffff;
+    font-weight: 700;
+    border: 1px solid transparent;
+    width: 100%;
+    font-size: 1.6rem;
+    transition: all .3s ease-in-out;
+}
+
+.button-form:hover {
+    background: #ffffff;
+    color:#0038b8;
+}
