@@ -34,7 +34,7 @@ p {
     color: #606060;
 }
 
-h1 span{
+h1{
     font-size: 5.5rem;
     line-height: 6.6rem;
     color: #fff;
@@ -44,7 +44,7 @@ h1 span{
 }
 
 
-h1 span:after {
+/* h1 span:after {
     position: absolute;
     content: "";
     width: 100%;
@@ -52,7 +52,7 @@ h1 span:after {
     background: #fff;
     bottom: 0;
     left: 0;
-}
+} */
 
 h2 {
     font-size: 4.8rem;

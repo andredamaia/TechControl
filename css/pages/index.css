@@ -149,11 +149,12 @@
 }
 
 .box-depoimentos {
-    width: 50rem;
-    height: 46rem;
+    width: 40rem;
+    height: 40rem;
     background: #ffffff;
-    padding: 8rem 6rem;
+    padding: 5rem 4rem;
     border-radius: 1rem;
+    margin-right: 2rem;
 }
 
 .person { 
@@ -233,7 +234,10 @@
 }
 
 
-
+.slider-depoimentos {
+    display: flex;
+    flex-direction: row;
+}
 
 
 
