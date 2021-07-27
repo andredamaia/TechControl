@@ -68,3 +68,32 @@ header.active {
     text-decoration: none;
     position: relative;
 }
+
+
+.list-dropdown {
+    position: absolute;
+    top: 100%;
+    left: -10rem;
+    width: 26rem;
+    padding: 0 1.5rem 1.5rem;
+    background: #fff;
+    box-shadow: 0 5px 30px rgb(0 0 0 / 10%);
+    margin: 0;
+    display: none;
+    border-radius: 1rem;
+}
+
+.header-sublink {
+    position: relative;
+    display: inline-block;
+}
+
+.header-sublink {
+    font-size: 1.5rem;
+    color: #777777;
+    line-height: 1.8rem;
+    margin: 0 1.2rem;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    font-weight: 600;
+}

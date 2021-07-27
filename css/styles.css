@@ -7,8 +7,10 @@
 @import './utils/preload.css';
 @import './utils/animate.css';
 @import './utils/form.css';
+@import './utils/responsive.css';
 
 @import './pages/index.css';
 @import './pages/contato.css';
 @import './pages/orcamento.css';
+@import './pages/empresa.css';
 @import './pages/produtos.css';

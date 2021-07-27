@@ -1,0 +1,223 @@
+@media (max-width: 769px) {
+
+    h1 {
+        font-size: 3rem;
+        line-height: 3.8rem;
+    }
+
+    h1 br { display: none;}
+
+    h2 {
+        font-size: 2.4rem !important;
+        line-height: 3rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    h2 br { display: none;}
+
+    input {
+        margin-bottom: 2rem;
+    }
+
+    p {
+        font-size: 1.6rem !important;
+        line-height: 2.4rem !important;
+    }
+
+    span {
+        font-size: 1.8rem !important;
+        line-height: auto !important;
+    }
+
+    .button-primary {
+        width: 100%;
+        text-align: center;
+        padding: 0 !important;
+    }
+
+    .button-light-blue {
+        padding: 0 !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    header {
+        background: #0038b8;
+        padding: 1rem 0;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .left-side {
+        padding-top: 8rem !important;
+        margin-bottom: 3rem;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .banner-principal {
+        height: 85vh;
+        padding: 0 !important;
+    }
+
+    .right-side figure {
+        height: auto !important;
+        width: 100% !important;
+    }
+
+    .left-side p {
+        font-size: 2rem !important;
+        line-height: 2.8rem !important;
+        padding: 2rem 0 !important;
+    }
+
+    .area-white {
+        padding: 3rem 0 !important;
+    }
+
+    .area-white p {
+        margin-bottom: 1.5rem !important;
+    }
+
+    .subtitle {
+        font-size: 1.6rem !important;
+        line-height: 2rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .servicos-title {
+        margin-bottom: 0 !important;
+    }
+
+    .area-gray {
+        padding: 3rem 0 !important;
+    }
+
+    .rodape-title {
+        line-height: 2.7rem !important;
+        margin-bottom: 3rem !important;
+    }
+
+    .rodape-title br { display: none;}
+
+    .box-dispositivos {
+        margin-bottom: 3rem !important;
+    }
+
+    .dispositivos {
+        width: 100%;
+    }
+
+    .dispositivos-img {
+        height: 20rem !important;
+    }
+
+    .dispositivos figure img {
+        max-width: 75% !important;
+    }
+
+    .right-text {
+        margin-top: 0 !important;
+    }
+
+    .galeria {
+        padding-top: 3rem !important;
+    }
+
+    .box-white {
+        width: 100% !important;
+    }
+
+    .box-depoimentos {
+        width: 100% !important;
+        height: auto !important;
+        padding: 3rem !important;
+    }
+
+    .box-img {
+        height: auto !important;
+    }
+
+    .duvidas {
+        padding: 3rem 0 !important;
+    }
+
+    footer {
+        padding: 3rem 0 0 !important;
+        text-align: center;
+    }
+
+    footer .menu ul {
+        padding: 0 !important;
+    }
+
+    footer .logo img {
+        margin-bottom: 3rem;
+    }
+
+    .copyright {
+        padding: 0 !important;
+        text-align: center !important;
+    }
+
+    .menu-footer {
+        margin-bottom: 2.5rem !important;
+    }
+
+    .copyright .left-side {
+        padding: 0 !important;
+    }
+
+    .redes-sociais {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+   
+    footer span {
+        display: block;
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+
+    .infos .col-4 {
+        padding: 0 !important;
+    }
+
+    .infos {
+        width: 85% !important;
+    }
+
+    .infos span {
+        display: none;
+    }
+
+    .box-infos {
+        flex-direction: column !important;
+    }
+
+    .box-infos img {
+        margin-right: 0 !important;
+        margin-bottom: 0;
+    }
+
+    .banner-internas {
+        padding: 6rem 0 !important;
+        background: url(/images/bg-banner-3.jpg) center no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .box-infos {
+        height: 8rem !important;
+    }
+
+    .mapa iframe {
+        height: 350px;
+    }
+}

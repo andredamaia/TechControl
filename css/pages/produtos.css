@@ -1,4 +1,67 @@
-.banner-produtos figure {
-    height: auto !important;
-    width: 85rem !important;
+.menu-produtos {
+    padding-top: 10rem;
+    background: #f7f8f9;
+}
+
+.submenu-produtos ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu-produtos ul li a {
+    font-size: 1.5rem;
+    line-height: 4.5rem;
+    color: #3b3b3b;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    display: block;
+    transition: all .3s ease-in-out;
+}
+
+.submenu-produtos ul li a:hover {
+    font-weight: 800;
+}
+
+.left-side.produtos {
+    padding: 0;
+}
+
+.down-side p {
+    font-weight: 400;
+    padding: 4.5rem 0 0;
+    color: #fff;
+    font-size: 2.4rem;
+    line-height: 4rem;
+}
+
+.down-side span {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 3.5rem;
+    padding: 4.5rem 0 0;
+    display: block;
+}
+
+.another-products {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.another-products .box-dispositivos { 
+    margin: 0 1.5rem;
+    display: block;
+    width: auto;
+}
+
+.another-products .dispositivos figure img {
+    width: 80%;
 }
