@@ -65,3 +65,11 @@
 .another-products .dispositivos figure img {
     width: 80%;
 }
+
+.left-side.produtos span {
+    font-weight: 700;
+    color: #fff;
+    font-size: 5.6rem;
+    line-height: 6.6rem;
+    display: block;
+}

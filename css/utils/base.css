@@ -36,7 +36,7 @@ input, textarea { outline: 0;}
 .banner-internas h2, .banner-internas .rodape-title { color: #ffffff !important;}
 
 
-.infos .col-12.col-md-4.col-xl-4 { padding: 0;}
+.infos .row .col-md-4.col-xl-4 { padding: 0;}
 
 .infos { 
     border-radius: 1rem;
