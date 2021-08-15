@@ -3,7 +3,7 @@ body {
 }
 
 .preload {
-    background: url('/images/bg-banner-3.jpg') center no-repeat;
+    background: url('../../images/bg-banner-3.jpg') center no-repeat;
     z-index: 90;
     position: fixed;
     top: 0;

@@ -41,9 +41,12 @@ button { border: none;}
 
 
 .button-secundary {
-    padding: 2rem 4rem;
-    background: #ffffff;
-    color: #0038b9 !important;
+    padding: 0 6rem;
+    height: 6rem;
+    line-height: 6rem;
+    display: inline-block;
+    background: #0038b8;
+    color: #fff !important;
     font-weight: 700 !important;
     transition: all .3s ease-in-out;
 }

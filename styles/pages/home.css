@@ -1,11 +1,9 @@
 .banner-principal {
-    background: url('/images/bg-banner-3.jpg') center no-repeat;
-    padding: 14rem 0;
+    background: url('../../images/bg-banner-3.jpg') center no-repeat;
     overflow: hidden;
-}
-
-.left-side {
-    padding-top: 13rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .left-side p {
@@ -48,7 +46,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 2.7rem;
+    margin-bottom: 0;
 }
 
 .servicos-title span {
@@ -67,7 +65,7 @@
 
 .box-white {
     height: 19rem;
-    width: 36rem;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,14 +118,46 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    transition: all .4s cubic-bezier(.645,.045,.355,1);
 }
 
+.dispositivos-img:hover {
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    transform: translateY(-5px);
+}
+
+.dispositivos-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ebedee;
+    height: 100%;
+    width: 0;
+    opacity: 0;
+    transition: all .6s cubic-bezier(.645,.045,.355,1);
+}
+
+.dispositivos-img:hover::after {
+    width: 100%;
+    background: #dadada;
+    opacity: 1;
+}
+
+.dispositivos figure {
+    position: relative;
+    z-index: 10;
+}
 
 .dispositivos figure img { 
     max-width: 90%;
 }
 
-.dispositivos { text-align: center;}
+.dispositivos { 
+    text-align: center;
+    width: 100%;
+}
 
 .dispositivos strong {
     text-align: center;
@@ -141,7 +171,7 @@
 }
 
 .box-depoimentos {
-    width: 40rem;
+    width: auto;
     height: 40rem;
     background: #ffffff;
     padding: 5rem 4rem;
@@ -192,7 +222,7 @@
 }
 
 .duvidas { 
-    background: url('/images/duvidas.jpg') center no-repeat;
+    background: url('../..//images/duvidas.jpg') center no-repeat;
     background-size: cover;
     padding: 10rem 0;
 }
@@ -229,8 +259,19 @@
 .slider-depoimentos {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
+.swiper-brands {
+    overflow: visible;
+    margin-top: 3rem;
+}
 
+.swiper-brands .swiper-wrapper {
+    transition-timing-function: linear;
+}
 
+.tipos-servicos p {
+    width: 90%;
+}
 
