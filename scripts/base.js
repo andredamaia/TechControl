@@ -6,21 +6,21 @@ const preloadProgress = document.querySelector('.preload span')
 const preloadIcon = document.querySelector('.full-color')
 
 preload.fetch([
-    './images/bg-banner-3.jpg',
-    './images/duvidas.jpg',
-    './images/bg-banner-2.jpg',
-    './images/dispositivo-1.png',
-    './images/dispositivo-2.png',
-    './images/dispositivo-3.png',
-    './images/dispositivo-4.png',
-    './images/dispositivos.png',
-    './images/sobre-1.jpg',
-    './images/sobre-2.jpg',
-    './images/sobre-3.jpg',
-    './images/img-video.jpg',
-    './images/logo-internas.png',
-    './images/galeria-1.jpg',
-    './images/galeria-2.jpg',
+    '../techcontrol/images/bg-banner-3.jpg',
+    '../techcontrol/images/duvidas.jpg',
+    '../techcontrol/images/bg-banner-2.jpg',
+    '../techcontrol/images/dispositivo-1.png',
+    '../techcontrol/images/dispositivo-2.png',
+    '../techcontrol/images/dispositivo-3.png',
+    '../techcontrol/images/dispositivo-4.png',
+    '../techcontrol/images/dispositivos.png',
+    '../techcontrol/images/sobre-1.jpg',
+    '../techcontrol/images/sobre-2.jpg',
+    '../techcontrol/images/sobre-3.jpg',
+    '../techcontrol/images/img-video.jpg',
+    '../techcontrol/images/logo-internas.png',
+    '../techcontrol/images/galeria-1.jpg',
+    '../techcontrol/images/galeria-2.jpg',
   ]).then(items => {
     const enterAnimantion = gsap.timeline({ delay: 1 })
   
@@ -60,3 +60,75 @@ preload.onfetched = item => {
 preload.onerror = item => {
   console.log(item)
 }
+
+// Menu Control
+const menuButton = document.querySelector('.open-menu')
+const menuClose = document.querySelector('.close-menu')
+const menuListButton = document.querySelector('.mobile-menu-list')
+const tl = gsap.timeline();
+
+let checkMobile = false
+let block = false
+
+menuListButton.addEventListener('click', () => {
+  tl.reverse();
+  block = false
+})
+
+menuClose.addEventListener('click', () => {
+  tl.reverse();
+  block = false
+})
+
+menuButton.addEventListener('click', (e) => {
+  e.preventDefault()
+  
+  if(block === true){
+    tl.reverse();
+    block = false
+  } else {
+    const screenWidth = screen.width
+  
+    screenWidth <= 768 ? checkMobile = true : checkMobile = false
+
+    if (tl.reversed()) {
+      tl.play();
+      block = true
+      return
+    } else {
+      tl.set('.mobile-menu', { height: 0 })
+      tl.set('.mobile-menu-header svg', { y: -30, autoAlpha: 0 })
+      tl.set('.mobile-menu-list li', { skewY: -3, y: 15 })
+
+      tl.fromTo('.mobile-menu', {
+        y: -400,
+      }, {
+        duration: .5,
+        autoAlpha: 1,
+        height:'100vh',
+        ease: 'power4.Out',
+        y: 0
+      })
+
+      tl.to('.mobile-menu-header svg', {
+        duration: .3,
+        autoAlpha: 1,
+        y: 0,
+        delay: -.2,
+        ease: 'power4.Out'
+      })
+
+      tl.to('.mobile-menu-list li', {
+        duration: .4,
+        autoAlpha: 1,
+        skewY: 0,
+        y: 0,
+        stagger: .1,
+        delay: -.1,
+        ease: 'power4.Out'
+      })
+
+      block = true
+    }
+  }
+})

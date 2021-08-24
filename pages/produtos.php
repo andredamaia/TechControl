@@ -4,10 +4,19 @@
             <div class="col-12">
                 <div class="submenu-produtos">
                     <ul>
-                        <li class="line-submenu active"><a href="#">Dispositivos de Controle Dimensional </a></li>
-                        <li class="line-submenu"><a href="#">Dispositivos e Gabaritos de Fixação</a></li>
-                        <li class="line-submenu"><a href="#">Bancadas de Montagem e Inspeção</a></li>
-                        <li class="line-submenu"><a href="#"> Bancadas de Montagem e Inspeção</a></li>
+                        <?php foreach ($products as $item) { ?>
+
+                        <div>
+                            <ul class="list-menu">
+                                <li class="line-submenu <?php if($subpage == $item['slug']){ echo 'active'; }?>">
+                                    <a href="<?php echo $pageurl; ?>/produtos/<?php echo $item['slug']; ?>">
+                                        <span><?php echo $item['title']['rendered']; ?></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <?php } ?>
                     </ul>
                 </div>
             </div>
@@ -19,11 +28,9 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-xl-6 offset-xl-3">
-                <h2>Soluções Especiais de Controle e Inspeção</h2>
+                <h2><?php echo $product[0]['title']['rendered']; ?></h2>
                 
-                <p>A Techcontrol desenvolve soluções específicas de controle dimensional por atributo ou variável, inspeção de presença de componentes, inspeção de montagem de componentes, inspeção simultânea de processos, etc.</p>
-            
-                <p>Conte conosco para desenvolver uma solução para o que você precisa, estaremos prontos para entender as suas necessidades e implementar as melhores tecnologias para entregar a solução ideal para o seu processo.</p>
+                <?php echo $product[0]['content']['rendered']; ?>
             </div>
         </div>
     </div>
@@ -35,17 +42,17 @@
             <div class="col-12 col-xl-10 offset-xl-1">
                 <div class="swiper-container swiper-product">
                     <div class="swiper-wrapper">
+                        <?php
+                            foreach($product[0]['acf']['galeria_de_imagens'] as $image){
+                        ?>
+                        
                         <div class="swiper-slide">
                             <figure>
-                                <img src="images/exemplo.jpg" alt="" />
+                                <img src="<?php echo $image['sizes']['post-thumbnail']; ?>" alt="" />
                             </figure>
                         </div>
 
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="images/exemplo.jpg" alt="" />
-                            </figure>
-                        </div>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
@@ -53,47 +60,17 @@
             <div class="col-12">
                 <div class="swiper-container swiper-products">
                     <div class="swiper-wrapper">
+                        <?php
+                            foreach($product[0]['acf']['galeria_de_imagens'] as $image){
+                        ?>
+                        
                         <div class="swiper-slide">
                             <figure>
-                                <img src="images/exemplo.jpg" alt="" />
+                                <img src="<?php echo $image['sizes']['medium']; ?>" alt="" />
                             </figure>
                         </div>
 
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="images/exemplo.jpg" alt="" />
-                            </figure>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="images/exemplo.jpg" alt="" />
-                            </figure>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="images/exemplo.jpg" alt="" />
-                            </figure>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="images/exemplo.jpg" alt="" />
-                            </figure>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="images/exemplo.jpg" alt="" />
-                            </figure>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="images/exemplo.jpg" alt="" />
-                            </figure>
-                        </div>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
@@ -114,47 +91,25 @@
 
             <div class="col-12 col-xl-8 offset-xl-2">
                 <div class="row">
-                    <div class="col-12 col-md-4 col-xl-4">
-                        <div class="box-dispositivos">
-                            <div class="dispositivos">
-                                <div class="dispositivos-img">
-                                    <figure>
-                                        <img src="images/dispositivo-2.png" alt="">
-                                    </figure>
-                                </div>
+                    <?php foreach ($products as $product) { ?>
 
-                                <strong>Dispositivos e Gabaritos<br/> de Fixação</strong>
+                    <div class="col-12 col-xl-6">
+                        <a href="<?php echo $pageurl; ?>/produtos/<?php echo $product['slug']; ?>" style="text-decoration: none;">
+                            <div class="box-dispositivos">
+                                <div class="dispositivos">
+                                    <div class="dispositivos-img">
+                                        <figure>
+                                            <img src="<?php echo $product['acf']['imagem']['sizes']['medium']; ?>" alt="">
+                                        </figure>
+                                    </div>
+
+                                    <strong><?php echo $product['title']['rendered']; ?></strong>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
-                    <div class="col-12 col-md-4 col-xl-4">
-                        <div class="box-dispositivos">
-                            <div class="dispositivos">
-                                <div class="dispositivos-img">
-                                    <figure>
-                                        <img src="images/dispositivo-3.png" alt="">
-                                    </figure>
-                                </div>
-
-                                <strong>Bancadas de Montagem<br/> e Inspeção</strong>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-4 col-xl-4">
-                        <div class="box-dispositivos">
-                            <div class="dispositivos">
-                                <div class="dispositivos-img">
-                                    <figure>
-                                        <img src="images/dispositivo-4.png" alt="">
-                                    </figure>
-                                </div>
-
-                                <strong>Soluções Especiais de<br/> Controle e Inspeção</strong>
-                            </div>
-                        </div>
-                    </div>
+                    <?php } ?>
                 </div>
             </div>
         </div>
@@ -169,17 +124,17 @@
 
                 <h2>Conheça um pouco do<br/> nosso trabalho</h2>
 
-                <span class="rodape-title">Fornecemos dispositivos de controle dimensional e sistemas <br /> inteligentes para montagem e inspeção às principais <br /> empresas automotivas do mundo.</span>
+                <span class="rodape-title">Fornecemos dispositivos de controle dimensional <br /> e bancadas de montagem e inspeção às principais <br /> empresas automotivas do mundo.</span>
 
-                <a href="<?php echo $pageurl; ?>/produtos" class="button-primary">
+                <a href="<?php echo $pageurl; ?>/produtos/dispositivos-de-controle-dimensional" class="button-primary">
                     Saiba mais
 
                     <figure class="white-arrow">
-                        <img src="images/button-arrow.png" alt="" />
+                        <img src="<?php echo $pageurl; ?>/images/button-arrow.png" alt="" />
                     </figure>
 
                     <figure class="blue-arrow">
-                        <img src="images/button-arrow-blue.png" alt="" />
+                        <img src="<?php echo $pageurl; ?>/images/button-arrow-blue.png" alt="" />
                     </figure>
                 </a>
             </div>
@@ -195,9 +150,17 @@
         spaceBetween: 15,
         speed: 600,
         loop: false,
-        slidesPerView: 5,
+        slidesPerView: 2,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
+        breakpoints: {
+            500: {
+                slidesPerView: 4,
+            },
+            768: {
+                slidesPerView: 5,
+            },
+        },
     })
     
     const swiperProduct = new Swiper('.swiper-product', {

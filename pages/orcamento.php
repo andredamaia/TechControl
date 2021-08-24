@@ -15,7 +15,7 @@
                             <div class="box-infos first">
                                 <a href="#">
                                     <figure>
-                                        <img src="images/telefone.png" alt="">
+                                        <img src="<?php echo $pageurl; ?>/images/telefone.png" alt="">
                                     </figure>
                                 </a>
 
@@ -27,7 +27,7 @@
                             <div class="box-infos second">
                                 <a href="#">
                                     <figure>
-                                        <img src="images/email.png" alt="">
+                                        <img src="<?php echo $pageurl; ?>/images/email.png" alt="">
                                     </figure>
                                 </a>
 
@@ -39,11 +39,11 @@
                             <div class="box-infos last">
                                 <a href="#">
                                     <figure>
-                                        <img src="images/whatsapp.png" alt="">
+                                        <img src="<?php echo $pageurl; ?>/images/whatsapp.png" alt="">
                                     </figure>
                                 </a>
 
-                                <span>(47) 9 9999-9999</span>
+                                <span>(47) 9 8406-8401</span>
                             </div>
                         </div>
                     </div>
@@ -60,47 +60,37 @@
                 <form class="form-highlight">
                     <div class="row">
                         <div class="col-12 col-md-6 col-xl-6">
-                            <div>
-                                <input type="text" placeholder="Nome">
-                            </div>
+                            <input type="text" placeholder="Nome">
                         </div>
 
                         <div class="col-12 col-md-6 col-xl-6">
-                            <div>
-                                <input type="text" placeholder="Telefone">
-                            </div>
+                            <input type="text" placeholder="Telefone">
                         </div>
 
                         <div class="col-12 col-md-6 col-xl-6">
-                            <div>
-                                <input type="email" placeholder="E-mail">
-                            </div>
+                            <input type="email" placeholder="E-mail">
                         </div>
 
                         <div class="col-12 col-md-6 col-xl-6">
-                            <div>
-                                <input type="text" placeholder="Empresa">
-                            </div>
+                            <input type="text" placeholder="Empresa">
                         </div>
 
                         <div class="col-12">
-                            <div>
-                                <textarea cols="30" rows="7" placeholder="Mensagem"></textarea>
-                            </div>
+                            <textarea cols="30" rows="7" placeholder="Mensagem"></textarea>
                         </div>
 
                         <div class="col-12 col-md-6 col-xl-6">
-                            <div>
-                                <div class="doc-anexos">
-                                    <figure>
-                                        <img src="images/anexo.png" alt="">
-                                    </figure>
+                            <label class="doc-anexos" for="anexo">
+                                <input type="file" name="anexo" id="anexo" style="display: none;" />
 
-                                    <span class="anexo">
-                                        Anexar arquivo
-                                    </span>
-                                </div>
-                            </div>
+                                <figure>
+                                    <img src="<?php echo $pageurl; ?>/images/anexo.png" alt="">
+                                </figure>
+
+                                <span class="anexo">
+                                    Anexar arquivo
+                                </span>
+                            </label>
                         </div>
 
 
@@ -108,11 +98,11 @@
                             <button class="button-light-blue">
                                 Enviar mensagem
                                 <figure class="white-arrow">
-                                    <img src="/images/button-arrow.png" alt="">
+                                    <img src="<?php echo $pageurl; ?>/images/button-arrow.png" alt="">
                                 </figure>
     
                                 <figure class="blue-arrow">
-                                    <img src="/images/arrow-blue-light.png" alt="">
+                                    <img src="<?php echo $pageurl; ?>/images/arrow-blue-light.png" alt="">
                                 </figure>
                             </button>
                         </div>
@@ -131,9 +121,9 @@
 
                 <h2>Conheça um pouco do<br/> nosso trabalho</h2>
 
-                <span class="rodape-title">Fornecemos dispositivos de controle dimensional e sistemas <br /> inteligentes para montagem e inspeção às principais <br /> empresas automotivas do mundo.</span>
+                <span class="rodape-title">Fornecemos dispositivos de controle dimensional <br /> e bancadas de montagem e inspeção às principais <br /> empresas automotivas do mundo.</span>
 
-                <a href="<?php echo $pageurl; ?>/produtos" class="button-primary">
+                <a href="<?php echo $pageurl; ?>/produtos/dispositivos-de-controle-dimensional" class="button-primary">
                     Saiba mais
 
                     <figure class="white-arrow">

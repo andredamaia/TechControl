@@ -8,7 +8,7 @@
                             <div class="logo">
                                 <a href="#">
                                     <figure>
-                                        <img src="images/logo-footer.png" alt="TechControl">
+                                        <img src="<?php echo $pageurl; ?>/images/logo-footer.png" alt="Techcontrol">
                                     </figure>
                                 </a>
                             </div>
@@ -18,7 +18,7 @@
                             <div class="menu">
                                 <ul>
                                     <li><a href="<?php echo $pageurl; ?>/empresa" class="line-footer">Empresa</a></li>
-                                    <li><a href="<?php echo $pageurl; ?>/produtos" class="line-footer">Produtos</a></li>
+                                    <li><a href="<?php echo $pageurl; ?>/produtos/dispositivos-de-controle-dimensional" class="line-footer">Produtos</a></li>
                                     <li><a href="<?php echo $pageurl; ?>/contato" class="line-footer">Contato</a></li>
                                 </ul>
                             </div>
@@ -28,7 +28,7 @@
             </div>
 
             <div class="col-12 col-md-4 col-xl-4">
-                <span>Dispositivos de controle <br />dimensional e sistemas<br /> inteligentes de montagem <br />e Inspeção.</span>
+                <span>Dispositivos de controle <br />dimensional e bancadas <br /> de montagem e Inspeção.</span>
             </div>
 
             <div class="col-12 col-md-4 col-xl-4">
@@ -81,13 +81,13 @@
         <div class="row">
             <div class="col-12 col-md-6 col-xl-6">
                 <div class="left-side">
-                    <p>Copyright © 2021 TechControl. Todos os direitos reservados</p>
+                    <p>Copyright © 2021 Techcontrol. Todos os direitos reservados</p>
                 </div>
             </div>
 
             <div class="col-12 col-md-6 col-xl-6">
                 <div class="right-side">
-                    <p>Website desenvolvido por <a href="https://b3marketing.com.br/" class="line-footer" style="text-decoration: none;"><span>B3 Marketing</span></a></p>
+                    <p>Website desenvolvido por <a href="https://b3marketing.com.br/" target="_blank" class="line-footer" style="text-decoration: none;"><span>B3 Marketing</span></a></p>
                 </div>
             </div>
         </div>

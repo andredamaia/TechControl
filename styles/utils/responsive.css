@@ -1,16 +1,36 @@
-@media (max-width: 769px) {
-
+@media (max-width: 1024px){
     h1 {
-        font-size: 3rem;
-        line-height: 3.8rem;
+        font-size: 3.4rem;
+        line-height: 3.4rem;
+    }
+
+    h2 {
+        font-size: 3.8rem;
+        line-height: 4.7rem;
+    }
+
+    p {
+        line-height: 2.4rem;
+    }
+
+    .banner-principal {
+        height: auto;
+        padding: 12rem 0 6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.4rem;
+        line-height: 3rem;
     }
 
     h1 br { display: none;}
 
     h2 {
-        font-size: 2.4rem !important;
-        line-height: 3rem !important;
-        margin-bottom: 1.5rem !important;
+        font-size: 2.4rem;
+        line-height: 3rem;
+        margin-bottom: 1.5rem;
     }
 
     h2 br { display: none;}
@@ -20,30 +40,29 @@
     }
 
     p {
-        font-size: 1.6rem !important;
-        line-height: 2.4rem !important;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
     }
 
     span {
-        font-size: 1.8rem !important;
-        line-height: auto !important;
+        font-size: 1.8rem;
+        line-height: auto;
     }
 
     .button-primary {
         width: 100%;
         text-align: center;
-        padding: 0 !important;
+        padding: 0;
     }
 
     .button-light-blue {
-        padding: 0 !important;
-        width: 100% !important;
-        text-align: center !important;
+        padding: 0;
+        width: 100%;
+        text-align: center;
     }
 
     header {
-        background: #0038b8;
-        padding: 1rem 0;
+        padding: 2rem 0;
     }
 
     .header-internas {
@@ -56,7 +75,12 @@
     }
 
     .left-side {
-        padding-top: 8rem !important;
+        padding-top: 8rem;
+        margin-bottom: 3rem;
+    }
+
+    .banner-principal .left-side {
+        padding-top: 0;
         margin-bottom: 3rem;
     }
 
@@ -65,52 +89,58 @@
     }
 
     .banner-principal {
-        height: 85vh;
-        padding: 0 !important;
+        height: 100vh;
+        padding: 0;
+        padding-top: 6rem;
+    }
+
+    .banner-produtos img {
+        width: 100%;
     }
 
     .right-side figure {
-        height: auto !important;
-        width: 100% !important;
+        height: auto;
+        width: 100%;
     }
 
     .left-side p {
-        font-size: 2rem !important;
-        line-height: 2.8rem !important;
-        padding: 2rem 0 !important;
+        font-size: 2rem;
+        line-height: 2.8rem;
+        padding: 2rem 0;
     }
 
     .area-white {
-        padding: 3rem 0 !important;
+        padding: 3rem 0;
     }
 
     .area-white p {
-        margin-bottom: 1.5rem !important;
+        margin-bottom: 1.5rem;
     }
 
     .subtitle {
-        font-size: 1.6rem !important;
-        line-height: 2rem !important;
-        margin-bottom: 1.5rem !important;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        margin-bottom: 1.5rem;
     }
 
     .servicos-title {
-        margin-bottom: 0 !important;
+        margin-bottom: 2rem;
     }
 
     .area-gray {
-        padding: 3rem 0 !important;
+        padding: 3rem 0;
     }
 
     .rodape-title {
-        line-height: 2.7rem !important;
-        margin-bottom: 3rem !important;
+        line-height: 2.2rem;
+        margin-bottom: 3rem;
+        font-size: 1.8rem;
     }
 
     .rodape-title br { display: none;}
 
     .box-dispositivos {
-        margin-bottom: 3rem !important;
+        margin-bottom: 3rem;
     }
 
     .dispositivos {
@@ -118,50 +148,59 @@
     }
 
     .dispositivos-img {
-        height: 20rem !important;
+        height: 20rem;
     }
 
     .dispositivos figure img {
-        max-width: 75% !important;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 
     .right-text {
-        margin-top: 0 !important;
+        margin-top: 0;
     }
 
     .galeria {
-        padding-top: 3rem !important;
+        padding-top: 3rem;
     }
 
     .box-white {
-        width: 100% !important;
+        width: 100%;
+        height: 12rem;
+    }
+
+    .box-white img {
+        width: 80%;
+        max-height: 60%;
+        object-fit: cover;
     }
 
     .box-depoimentos {
-        width: 100% !important;
-        height: auto !important;
-        padding: 3rem !important;
+        width: 100%;
+        height: auto;
+        padding: 3rem;
     }
 
     .box-img {
-        height: auto !important;
+        height: auto;
     }
 
     .box-img figure {
-        height: 20rem !important;
+        height: 20rem;
     }
 
     .duvidas {
-        padding: 3rem 0 !important;
+        padding: 3rem 0;
     }
 
     footer {
-        padding: 3rem 0 0 !important;
+        padding: 3rem 0 0;
         text-align: center;
     }
 
     footer .menu ul {
-        padding: 0 !important;
+        padding: 0;
     }
 
     footer .logo img {
@@ -169,16 +208,16 @@
     }
 
     .copyright {
-        padding: 0 !important;
-        text-align: center !important;
+        padding: 0;
+        text-align: center;
     }
 
     .menu-footer {
-        margin-bottom: 2.5rem !important;
+        margin-bottom: 2.5rem;
     }
 
     .copyright .left-side {
-        padding: 0 !important;
+        padding: 0;
     }
 
     .redes-sociais {
@@ -194,12 +233,16 @@
         margin-bottom: 2.5rem;
     }
 
+    footer .menu > ul li {
+        margin-left: 0;
+    }
+
     .infos .col-4 {
-        padding: 0 !important;
+        padding: 0;
     }
 
     .infos {
-        width: 85% !important;
+        width: 85%;
     }
 
     .infos span {
@@ -207,23 +250,23 @@
     }
 
     .box-infos {
-        flex-direction: column !important;
+        flex-direction: column;
     }
 
     .box-infos img {
-        margin-right: 0 !important;
+        margin-right: 0;
         margin-bottom: 0;
     }
 
     .banner-internas {
-        padding: 6rem 0 !important;
-        background: url(/images/bg-banner-3.jpg) center no-repeat;
+        padding: 8rem 0 6rem;
+        background: url(../../images/bg-banner-3.jpg) center no-repeat;
         background-size: cover;
         position: relative;
     }
 
     .box-infos {
-        height: 8rem !important;
+        height: 8rem;
     }
 
     .mapa iframe {
@@ -232,49 +275,49 @@
 
     .white-box {
         flex-direction: column;
-        margin-left: 0 !important;
+        margin-left: 0;
         margin-top: 2rem;
-        padding: 3rem !important;
+        padding: 3rem;
     }
 
     .white-box figure img {
-        width: 140px !important;
-        margin-right: 0 !important;
+        width: 140px;
+        margin-right: 0;
         margin-bottom: 2rem;
     }
 
     .estrutura-description span {
-        margin-bottom: 1rem !important;
+        margin-bottom: 1rem;
     }
 
     .estrutura-img figure {
-        height: 20rem !important;
+        height: 20rem;
     }
 
     .orcamento {
-        padding: 6rem 0 3rem !important;
+        padding: 6rem 0 3rem;
     }
 
     .another-products {
-        flex-direction: column !important;
+        flex-direction: column;
     }
 
-    .menu-produtos { display: none !important;}
+    .menu-produtos { display: none;}
 
     .left-side.produtos span {
-        font-size: 3.6rem !important;
-        line-height:  5rem !important;
+        font-size: 3.6rem;
+        line-height:  5rem;
     }
 
     .down-side p {
-        padding: 0 0 2.5rem 0 !important;
-        font-size: 1.8rem !important;
-        line-height: 2.6rem !important;
+        padding: 0 0 2.5rem 0;
+        font-size: 1.8rem;
+        line-height: 2.6rem;
     }
 
     .down-side span {
-        line-height: 2.6rem !important;
-        padding: 0 !important;
+        line-height: 2.6rem;
+        padding: 0;
     }
 
     .banner-principal.produtos-area {
@@ -282,18 +325,56 @@
     }
 
     .copyright .left-side p {
-        padding: 1.5rem 0 !important;
+        padding: 1.5rem 0;
         height: 6rem;
         text-align: center;
     }
 
     .iso {
-        margin-left: 0 !important;
+        margin-left: 0;
         text-align: center;
     }
 
     .banner-produtos figure {
-        width: 100% !important;
+        width: 100%;
     }
 
+    .slider-depoimentos {
+        flex-direction: column;
+    }
+
+    .area-portfolio {
+        padding: 4rem 0;
+    }
+
+    .swiper-product {
+        margin-bottom: .5rem;
+    }
+
+    .swiper-products figure {
+        height: 110px;
+    }
+
+    .copyright {
+        padding-bottom: 2rem;
+    }
+
+    .copyright .left-side {
+        margin-bottom: 0;
+    }
+
+    .copyright .left-side p {
+        font-size: 1.4rem;
+        margin-bottom: 0;
+        line-height: 1.8rem;
+        height: auto;
+    }
+
+    .copyright .right-side p {
+        font-size: 1.4rem;
+    }
+
+    .servicos-title span {
+        font-size: 2rem;
+    }
 }
