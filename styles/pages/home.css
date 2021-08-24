@@ -4,6 +4,8 @@
     height: 100vh;
     display: flex;
     align-items: center;
+    padding-top: 9rem;
+    background-size: cover;
 }
 
 .left-side p {
@@ -46,13 +48,13 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 0;
+    margin-bottom: 2rem;
 }
 
 .servicos-title span {
     margin-left: 1rem;
     font-size: 2.4rem;
-    line-height: 7.5rem;
+    line-height: 2.5rem;
     font-weight: 700;
     color: #00023f;
 }
@@ -110,7 +112,7 @@
 }
 
 .dispositivos-img { 
-    background: #ebedee;
+    background: #202020;
     margin-bottom: 2rem;
     width: 100%;
     height: 30.7rem;
@@ -132,7 +134,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: #ebedee;
+    background: #202020;
     height: 100%;
     width: 0;
     opacity: 0;
@@ -141,17 +143,19 @@
 
 .dispositivos-img:hover::after {
     width: 100%;
-    background: #dadada;
+    background: #202020;
     opacity: 1;
 }
 
 .dispositivos figure {
     position: relative;
     z-index: 10;
+    height: 100%;
+    width: 100%;
 }
 
 .dispositivos figure img { 
-    max-width: 90%;
+    width: 100%;
 }
 
 .dispositivos { 

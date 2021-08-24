@@ -3,15 +3,15 @@
         <div class="row d-flex align-items-center">
             <div class="col-12 col-md-6 col-xl-6">
                 <div class="left-side">
-                    <h1>Fornecemos dispositivos de controle dimensional e sistemas inteligentes para montagem e inspeção às principais empresas automotivas do mundo</h1>
+                    <h1>Nossos produtos estão presentes nas principais empresas automotivas do mundo</h1>
 
                     <p>Há mais de uma década no mercado, contamos com uma equipe técnica com vasta experiência e com uma estrutura fabril de alta tecnologia para garantir qualidade e excelência.</p>
                 </div>
             </div>
 
-            <div class="col-12 dol-md-5 col-xl-5 offset-md-1 offset-xl-1">
+            <div class="col-12 col-md-5 col-xl-5 offset-md-1 offset-xl-1">
                 <div class="right-side banner-produtos">
-                    <img src="images/banner-produtos.jpg" alt="">
+                    <img src="<?php echo $pageurl; ?>/images/banner-produtos.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -42,7 +42,7 @@
                 <div class="galeria">
                     <div class="box-img">
                         <figure>
-                            <img src="images/sobre-1.jpg" alt="">
+                            <img src="<?php echo $pageurl; ?>/images/sobre-1.jpg" alt="">
                         </figure>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
                 <div class="galeria">
                     <div class="box-img">
                         <figure>
-                            <img src="images/sobre-2.jpg" alt="">
+                            <img src="<?php echo $pageurl; ?>/images/sobre-2.jpg" alt="">
                         </figure>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                 <div class="galeria">
                     <div class="box-img">
                         <figure>
-                            <img src="images/sobre-3.jpg" alt="">
+                            <img src="<?php echo $pageurl; ?>/images/sobre-3.jpg" alt="">
                         </figure>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
 
 <div class="area-video">
     <figure>
-        <img src="images/bg-video.jpg" alt="">
+        <img src="<?php echo $pageurl; ?>/images/bg-video.jpg" alt="">
     </figure>
 </div>
 
@@ -83,7 +83,7 @@
             <div class="col-12 text-center">
                 <span class="subtitle">Certificação ISO 9001</span>
 
-                <h2>Sistema de Garantia de Qualidade Techcontrol</h2>
+                <h2 style="margin-bottom: 6rem;">Sistema de Garantia de Qualidade Techcontrol</h2>
             </div>
 
             <div class="col-12 col-md-5 col-xl-5">
@@ -97,13 +97,13 @@
             <div class="col-12 col-md-7 col-xl-7">
                 <div class="white-box">
                     <figure>
-                        <img src="images/tuvnord-logo.png" alt="">
+                        <img src="<?php echo $pageurl; ?>/images/tuvnord-logo.png" alt="">
                     </figure>
                     
                     <div class="iso">
                         <p>A ISO 9001 é um sistema de gestão da qualidade baseado em requisitos que garantem a qualidade de produtos e processos da empresa.</p>
 
-                        <a href="#" class="button-light-blue">Baixar catálogo</a>
+                        <a href="#" class="button-light-blue">Baixar certificado</a>
                     </div>
                 </div>
             </div>
@@ -171,7 +171,7 @@
                         <div class="swiper-slide">
                             <div class="box-white">
                                 <figure>
-                                    <img src="images/faurecia.png" alt="" />
+                                    <img src="<?php echo $pageurl; ?>/images/faurecia.png" alt="" />
                                 </figure>
                             </div>
                         </div>
@@ -179,7 +179,7 @@
                         <div class="swiper-slide">
                             <div class="box-white">
                                 <figure>
-                                    <img src="images/iber-oleff.jpg" alt="" />
+                                    <img src="<?php echo $pageurl; ?>/images/iber-oleff.jpg" alt="" />
                                 </figure>
                             </div>
                         </div>
@@ -187,7 +187,7 @@
                         <div class="swiper-slide">
                             <div class="box-white">
                                 <figure>
-                                    <img src="images/gestamp.jpg" alt="" />
+                                    <img src="<?php echo $pageurl; ?>/images/renault.jpg" alt="" />
                                 </figure>
                             </div>
                         </div>
@@ -195,7 +195,7 @@
                         <div class="swiper-slide">
                             <div class="box-white">
                                 <figure>
-                                    <img src="images/renault.jpg" alt="" />
+                                    <img src="<?php echo $pageurl; ?>/images/smp.jpg" alt="" />
                                 </figure>
                             </div>
                         </div>
@@ -203,7 +203,7 @@
                         <div class="swiper-slide">
                             <div class="box-white">
                                 <figure>
-                                    <img src="images/smp.jpg" alt="" />
+                                    <img src="<?php echo $pageurl; ?>/images/ford.jpg" alt="" />
                                 </figure>
                             </div>
                         </div>
@@ -211,7 +211,7 @@
                         <div class="swiper-slide">
                             <div class="box-white">
                                 <figure>
-                                    <img src="images/ford.jpg" alt="" />
+                                    <img src="<?php echo $pageurl; ?>/images/gm.jpg" alt="" />
                                 </figure>
                             </div>
                         </div>
@@ -219,15 +219,7 @@
                         <div class="swiper-slide">
                             <div class="box-white">
                                 <figure>
-                                    <img src="images/gm.jpg" alt="" />
-                                </figure>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="box-white">
-                                <figure>
-                                    <img src="images/honda.jpg" alt="" />
+                                    <img src="<?php echo $pageurl; ?>/images/honda.jpg" alt="" />
                                 </figure>
                             </div>
                         </div>
@@ -239,7 +231,7 @@
                         <div class="swiper-slide">
                             <div class="box-white">
                                 <figure>
-                                    <img src="images/vuteq.jpg" alt="" />
+                                    <img src="<?php echo $pageurl; ?>/images/vuteq.jpg" alt="" />
                                 </figure>
                             </div>
                         </div>
@@ -247,7 +239,7 @@
                         <div class="swiper-slide">
                             <div class="box-white">
                                 <figure>
-                                    <img src="images/reydel.jpg" alt="" />
+                                    <img src="<?php echo $pageurl; ?>/images/reydel.jpg" alt="" />
                                 </figure>
                             </div>
                         </div>
@@ -255,7 +247,7 @@
                         <div class="swiper-slide">
                             <div class="box-white">
                                 <figure>
-                                    <img src="images/fiat.jpg" alt="" />
+                                    <img src="<?php echo $pageurl; ?>/images/fiat.jpg" alt="" />
                                 </figure>
                             </div>
                         </div>
@@ -263,7 +255,7 @@
                         <div class="swiper-slide">
                             <div class="box-white">
                                 <figure>
-                                    <img src="images/plascar.jpg" alt="" />
+                                    <img src="<?php echo $pageurl; ?>/images/plascar.jpg" alt="" />
                                 </figure>
                             </div>
                         </div>
@@ -271,7 +263,7 @@
                         <div class="swiper-slide">
                             <div class="box-white">
                                 <figure>
-                                    <img src="images/mercedes-benz.jpg" alt="" />
+                                    <img src="<?php echo $pageurl; ?>/images/mercedes-benz.jpg" alt="" />
                                 </figure>
                             </div>
                         </div>
@@ -279,7 +271,7 @@
                         <div class="swiper-slide">
                             <div class="box-white">
                                 <figure>
-                                    <img src="images/volkswagen.jpg" alt="" />
+                                    <img src="<?php echo $pageurl; ?>/images/volkswagen.jpg" alt="" />
                                 </figure>
                             </div>
                         </div>
@@ -287,7 +279,7 @@
                         <div class="swiper-slide">
                             <div class="box-white">
                                 <figure>
-                                    <img src="images/arteb.jpg" alt="" />
+                                    <img src="<?php echo $pageurl; ?>/images/arteb.jpg" alt="" />
                                 </figure>
                             </div>
                         </div>
@@ -295,7 +287,7 @@
                         <div class="swiper-slide">
                             <div class="box-white">
                                 <figure>
-                                    <img src="images/hyundai.jpg" alt="" />
+                                    <img src="<?php echo $pageurl; ?>/images/hyundai.jpg" alt="" />
                                 </figure>
                             </div>
                         </div>
@@ -319,15 +311,13 @@
                 <div class="tipos-servicos">
                     <div class="servicos-title">
                         <figure>
-                            <img src="/images/capacidade.png" alt="">
+                            <img src="<?php echo $pageurl; ?>/images/capacidade.png" alt="">
                         </figure>
 
                         <span>Capacidade Produtiva</span>
                     </div>
 
                     <p>Ao longo dos anos a Techcontrol desenvolveu uma estrutura de padronização de componentes para atender as altas demandas e continuar prezando pela excelência na qualidade.</p>
-
-                    <p>Toda esta padronização aliada a experiência e a estrutura garantem à Techcontrol a capacidade produtiva de cerca de 200 dispositivos por ano e um tempo médio de 45 dias entre concepção e entrega do dispositivo calibrado.</p>
                 </div>
             </div>
             
@@ -335,7 +325,7 @@
                 <div class="tipos-servicos">
                     <div class="servicos-title">
                         <figure>
-                            <img src="/images/certificado.png" alt="">
+                            <img src="<?php echo $pageurl; ?>/images/certificado.png" alt="">
                         </figure>
 
                         <span>Certificação ISO 9001</span>
@@ -349,17 +339,13 @@
                 <div class="tipos-servicos">
                     <div class="servicos-title">
                         <figure>
-                            <img src="/images/how-know.png" alt="">
+                            <img src="<?php echo $pageurl; ?>/images/how-know.png" alt="">
                         </figure>
 
                         <span>Know how</span>
                     </div>
 
-                    <p>A experiência técnica da equipe é um dos fatores de sucesso do negócio e contribui muito para a excelência nos resultados.</p>
-
-                    <p>Sabendo disso a Techcontrol investe constantemente em capacitações e preza muito pela relação duradoura entre a empresa e os seus colaboradores.</p>
-
-                    <p>O resultado disso vai além da grande capacidade produtiva, mas abrange também a confiança dos clientes que não têm dúvidas que podem sempre contar com a expertise e excelente capacidade de desenvolvimento de soluções em equipe.</p>
+                    <p>A experiência técnica da equipe é um dos fatores de sucesso do negócio e contribui muito para a excelência nos resultados. Sabendo disso a Techcontrol investe constantemente em capacitações e preza muito pela relação duradoura entre a empresa e os seus colaboradores.</p>
                 </div>
             </div>
         </div>
@@ -375,17 +361,17 @@
 
                 <h2>Conheça um pouco do<br/> nosso trabalho</h2>
 
-                <span class="rodape-title">Fornecemos dispositivos de controle dimensional e sistemas <br />inteligentes para montagem e inspeção às principais <br /> empresas automotivas do mundo.</span>
+                <span class="rodape-title">Fornecemos dispositivos de controle dimensional <br /> e bancadas de montagem e inspeção às principais <br /> empresas automotivas do mundo.</span>
 
-                <a href="<?php echo $pageurl; ?>/produtos" class="button-primary">
+                <a href="<?php echo $pageurl; ?>/produtos/dispositivos-de-controle-dimensional" class="button-primary">
                     Saiba mais
 
                     <figure class="white-arrow">
-                        <img src="images/button-arrow.png" alt="">
+                        <img src="<?php echo $pageurl; ?>/images/button-arrow.png" alt="">
                     </figure>
 
                     <figure class="blue-arrow">
-                        <img src="images/button-arrow-blue.png" alt="">
+                        <img src="<?php echo $pageurl; ?>/images/button-arrow-blue.png" alt="">
                     </figure>
                 </a>
             </div>
@@ -404,15 +390,18 @@
             delay: 1,
         },
         loop: true,
-        slidesPerView: 3,
+        slidesPerView: 2,
         allowTouchMove: false,
         disableOnInteraction: true,
 
         breakpoints: {
             500: {
-                slidesPerView: 4,
+                slidesPerView: 2,
             },
-            768: {
+            1024: {
+                slidesPerView: 3,
+            },
+            1280: {
                 slidesPerView: 5,
             },
         },

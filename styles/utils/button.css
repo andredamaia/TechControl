@@ -49,6 +49,8 @@ button { border: none;}
     color: #fff !important;
     font-weight: 700 !important;
     transition: all .3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .button-secundary:hover {
@@ -104,6 +106,6 @@ button { border: none;}
 }
 
 .button-form:hover {
-    background: #ffffff;
-    color:#0038b8;
+    background: #00023f;
+    color: #ffffff;
 }

@@ -25,7 +25,47 @@ header {
     width: 100%;
 }
 
-.menu ul {
+.list-menu-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+    padding: 3rem;
+    width: 30rem;
+    display: none;
+    border-top: 5px solid #0078ff;
+}
+
+.list-menu-dropdown li {
+    margin-left: 0 !important;
+    transition: all .3s ease-in-out;
+}
+
+.list-menu-dropdown li:hover {
+    opacity: .6;
+}
+
+.list-menu-dropdown li a {
+    line-height: 2rem;
+    display: inline-block;
+}
+
+.list-menu-dropdown li:last-child {
+    border: none;
+    padding-left: 0;
+}
+
+.list-menu-dropdown li:last-child:after {
+    display: none;
+}
+
+
+.menu > ul li:hover .list-menu-dropdown {
+   display: block; 
+}
+
+.menu > ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -33,12 +73,29 @@ header {
     margin-bottom: 0;
 }
 
-.menu ul li {
+.menu > ul li {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 4.5rem;
     margin-left: 3rem;
     list-style: none;
+    position: relative;
+}
+
+header .menu > ul > li:last-child:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 2px;
+    height: 25px;
+    background: #000;
+}
+
+header .menu > ul > li:last-child {
+    padding-left: 25px;
 }
 
 .menu ul li a {
@@ -99,4 +156,148 @@ header {
     text-decoration: none;
     transition: all .3s ease-in-out;
     font-weight: 600;
+}
+
+.mobile-menu {
+    background: #fff;
+    background-size: cover;
+    width: 100%;
+    height: 0;
+    position: fixed;
+    left:  0;
+    top: 0;
+    z-index: 910;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.mobile-menu-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-menu-footer {
+    justify-content: center;
+    text-align: center;
+}
+
+.mobile-menu-footer a {
+    margin: 0 15px;
+    opacity: .4
+}
+
+.mobile-menu-footer a.active {
+    opacity: 1;
+}
+
+.mobile-menu-header img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.mobile-menu-list {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-menu-list ul {
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu-list li {
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.mobile-menu-list li a {
+    font-size: 4.2rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.close-menu {
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.open-menu {
+    transform-origin: right;
+    height: 16px;
+    transition: all .3s ease-in-out; 
+}
+
+.lang {
+    position: relative;
+    padding: 0 2rem;
+    height: 6rem;
+    line-height: 6rem;
+    border: 1px solid #d9d8dd;
+}
+
+.lang:hover .lang-options {
+    display: block;
+}
+
+.lang a {
+    color: #111;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+    text-align: center;
+}
+
+.lang img {
+    margin-right: 1rem;
+}
+
+.lang-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 1rem 2rem 0;
+    display: none;
+}
+
+.lang-options a {
+    opacity: .6;
+    margin-bottom: 1rem;
+    height: 3rem;
+    line-height: 3rem;
+}
+
+.lang-options a:hover {
+    opacity: 1;
+}
+
+.mobile-menu-logo {
+    width: 35%;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-header img {
+        max-width: 148px;
+    }
+
+    .mobile-menu-list li a {
+        font-size: 3.2rem;
+    }
+
+    .mobile-menu-logo {
+        width: 65%;
+    }
 }

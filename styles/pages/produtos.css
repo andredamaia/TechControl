@@ -19,11 +19,15 @@
 .submenu-produtos ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.submenu-produtos ul li {
+    margin: 0 30px;
 }
 
 .submenu-produtos ul li a {
